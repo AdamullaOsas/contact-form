@@ -69,7 +69,7 @@ const App = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen w-full bg-green-200">
-            <section className="md:w-[736px] w-[90%] bg-white p-10 rounded-2xl">
+            <section className="md:w-[736px] w-[90%] my-10 bg-white p-10 rounded-2xl">
                 <h1 className="text-green-900 heading">Contact Us</h1>
                 <form className="flex flex-col" onSubmit={handleSubmit}>
                     <div className="flex sm:flex-row flex-col w-full sm:gap-4 ">
