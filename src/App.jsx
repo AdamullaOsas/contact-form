@@ -87,7 +87,7 @@ const App = () => {
                                 name="firstName"
                                 className={`border-[1px] border-solid rounded-lg h-12 p-2 outline-green-600 hover:cursor-pointer ${
                                     errors.firstName
-                                        ? "border-red-500"
+                                        ? "border-red"
                                         : "border-grey-500"
                                 }`}
                                 value={firstName}
@@ -113,7 +113,7 @@ const App = () => {
                                 name="lastName"
                                 className={`border-[1px] border-solid rounded-lg h-12 p-2 outline-green-600 hover:cursor-pointer ${
                                     errors.lastName
-                                        ? "border-red-500"
+                                        ? "border-red"
                                         : "border-grey-500"
                                 }`}
                                 value={lastName}
@@ -138,7 +138,7 @@ const App = () => {
                         id="email"
                         name="email"
                         className={`border-[1px] border-solid rounded-lg h-12 p-2 outline-green-600 hover:cursor-pointer ${
-                            errors.email ? "border-red-500" : "border-grey-500"
+                            errors.email ? "border-red" : "border-grey-500"
                         }`}
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -218,9 +218,7 @@ const App = () => {
                         id="message"
                         name="message"
                         className={`min-h-[105px] border-[1px] border-solid rounded-lg py-3 px-6 outline-green-600 text-green-900 bodyRegular hover:cursor-pointer ${
-                            errors.message
-                                ? "border-red-500"
-                                : "border-grey-500"
+                            errors.message ? "border-red" : "border-grey-500"
                         }`}
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
